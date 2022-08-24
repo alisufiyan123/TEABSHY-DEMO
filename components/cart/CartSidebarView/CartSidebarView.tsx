@@ -70,9 +70,9 @@ const CartSidebarView: FC = () => {
           ))}
           <Card sx={{ marginLeft: 'auto', minWidth: '10rem', paddingLeft: 5 }}>
             <Grid gap={1} columns={2} sx={{ my: 3 }}>
-              <Text>Subtotal:</Text>
+              <Text>Subtotal: </Text>
               <Text sx={{ marginLeft: 'auto' }}>{subTotal}</Text>
-              <Text>Shipping:</Text>
+              <Text>Shipping: </Text>
               <Text sx={{ marginLeft: 'auto' }}> - </Text>
               <Text>Tax: </Text>
               <Text sx={{ marginLeft: 'auto' }}> - </Text>
@@ -80,7 +80,7 @@ const CartSidebarView: FC = () => {
 
             <Divider />
             <Grid gap={1} columns={2}>
-              <Text variant="bold">Estimated Total:</Text>
+              <Text variant="bold">Estimated Total: </Text>
               <Text variant="bold" sx={{ marginLeft: 'auto' }}>
                 {total}
               </Text>
@@ -90,7 +90,7 @@ const CartSidebarView: FC = () => {
           {checkoutUrl && (
             <NavLink
               variant="nav"
-              sx={{ width: '100%', m: 2, p: 12, textAlign: 'center' }}
+              sx={{ width: '100%', m: 2, p: 12, textAlign: 'center', color:'lightgray' }}
               href={checkoutUrl!}
             >
               Proceed to Checkout
